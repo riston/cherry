@@ -1,7 +1,7 @@
 
 # Cherry.ee offer parser
 
-Parse from [Cherry.ee](www.cherry.ee) offers by categories.
+Parse from [Cherry.ee](https://www.cherry.ee) offers by categories.
 
 ## Tests
 
