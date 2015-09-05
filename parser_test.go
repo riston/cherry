@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	MockPath = "./mock/kodu.html"
+	MockPath = "./mock/kodu-05-09-15.html"
 )
 
 func readFile(path string) io.Reader {
@@ -32,24 +32,24 @@ func TestParser(t *testing.T) {
 	result, _ := ParseFromReader("Kodu&Aed", reader)
 
 	firstItem := &Offer{
-		"Päikesevari Sinu suvisesse aeda või randa",
-		"/triibuline-paikesevari",
-		9.99,
-		29.99,
+		"Nutikas niiskusekoguja Sinu kodu kuivema õhu heaks",
+		"/nutikas-niiskusekoguja-voi-taitegraanulid",
+		5.99,
 		0,
-		12,
-		568579,
+		3,
+		0,
+		432782,
 	}
 	assert.EqualValues(t, firstItem, result.Offers[0], "Päiksevarju pakkumine")
 
 	secondItem := &Offer{
-		"Liurada laste lustimiseks palaval suvepäeval",
-		"/vinuulist-liurada",
-		9.99,
-		14.99,
+		"Sinu riiete topivaba elu algab nüüd! Praktilised topieemaldajad",
+		"/sinu-riiete-topivaba-elu-praktilise-topieemaldajaga",
+		4.39,
 		0,
-		6,
-		568579,
+		3,
+		50,
+		432782,
 	}
 	assert.EqualValues(t, secondItem, result.Offers[1], "Liurada laste")
 }
