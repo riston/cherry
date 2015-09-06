@@ -20,14 +20,13 @@ var (
 
 	// Categories is an url and category map, move this map to config file
 	Categories = map[string]string{
-		"Perfume":        fmt.Sprintf("%s%s", BaseURL, "/pakkumised/kaubamaja/parfuumid"),
-		"Stores":         fmt.Sprintf("%s%s", BaseURL, "/pakkumised/kaubamaja/kaupluste-eripakkumised-kiirematele"),
+		"Perfume":        fmt.Sprintf("%s%s", BaseURL, "/kaubad/parfuumid"),
 		"BeautyProducts": fmt.Sprintf("%s%s", BaseURL, "/pakkumised/kaubamaja/ilutooted"),
-		"SportsHealth":   fmt.Sprintf("%s%s", BaseURL, "/pakkumised/kaubamaja/spordi-ja-tervisetooted"),
-		"HomeGarden":     fmt.Sprintf("%s%s", BaseURL, "/pakkumised/kaubamaja/kodu-ja-aed"),
-		"FoodConsumer":   fmt.Sprintf("%s%s", BaseURL, "/pakkumised/kaubamaja/toidu-ja-tarbekaubad"),
-		"Fashion":        fmt.Sprintf("%s%s", BaseURL, "/pakkumised/kaubamaja/moekaubad"),
-		"Children":       fmt.Sprintf("%s%s", BaseURL, "/pakkumised/kaubamaja/lastekaubad-ja-manguasjad"),
+		"SportsHealth":   fmt.Sprintf("%s%s", BaseURL, "/kaubad/spordi-ja-tervisetooted"),
+		"HomeGarden":     fmt.Sprintf("%s%s", BaseURL, "/kaubad/kodu-ja-aed"),
+		"FoodConsumer":   fmt.Sprintf("%s%s", BaseURL, "/kaubad/toidu-ja-tarbekaubad"),
+		"Fashion":        fmt.Sprintf("%s%s", BaseURL, "/kaubad/moekaubad"),
+		"Children":       fmt.Sprintf("%s%s", BaseURL, "/kaubad/lastekaubad-ja-manguasjad"),
 	}
 )
 
